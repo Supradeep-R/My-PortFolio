@@ -17,7 +17,7 @@ body{
     font-family: monument;
     overflow-x: hidden;
 }
-#hero-section{
+.hero-section{
     position: relative;
     background-color: var(--primary-color);
     width: 100vw;
@@ -72,6 +72,9 @@ body{
     transform: scale(1.2);
     transition: transform 1s ease-in;
 }
+
+
+/* skills section */
 .skills-section{
     background-color: var(--secondary-color);
     padding: 10em 4em;
@@ -122,6 +125,9 @@ body{
 #skill4{
     background: linear-gradient(to top,#9e8e81dc,#9e8e81dc),url(images/javascript-logo.jpg) no-repeat center center / cover;
 }
+
+
+
 /* projects section */
 .projects-section{
     position: relative;
@@ -224,8 +230,11 @@ body{
     margin-block: 1rem;
 }
 
-    
+/* media queries */
 @media screen and (max-width: 600px){
+    .hero-section-text h2{
+        font-size: 2rem;
+    }
     .fg-image{
         display: none;
     }
